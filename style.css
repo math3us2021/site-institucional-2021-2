@@ -1,0 +1,91 @@
+/*            *****CSS reset*****/
+*{
+    font-family: Calibri, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*As bordas faz parte das borda do elemento*/
+}
+/*//////////////////////////////*/
+header{
+    display: flex;
+    justify-content: center; /* centralização horizontal*/
+    align-items: center; /* centralização vertical */
+    border: 1px solid navy;
+    background-color: lightblue;
+    min-height: 50px; /* altura minima*/
+    flex-wrap: wrap;
+}
+nav{
+    display: flex;
+    justify-content: center; /* centralização horizontal*/
+    align-items: center; /* centralização vertical */
+    border: 1px solid green;
+    background-color: palegreen;
+    min-height: 25px; /* altura minima*/
+    width: 100%;
+    margin: 5px;
+}
+main{
+    display: flex;
+    justify-content: center; /* centralização horizontal*/
+    align-items: stretch; /* filhos com altura 100 do pai */
+    border: 1px solid blanchedalmond;
+    background-color: lemonchiffon;
+    min-height: 200px; /* altura minima*/
+}
+
+section{
+    display: flex;
+    justify-content: center; /* centralização horizontal*/
+    align-items: center; /* centralização vertical */
+    border: 1px solid indigo;
+    background-color: mediumpurple;
+    width: 75%;
+    margin: 5px;
+    flex-direction: column; /* itens filhos em coluna */
+    
+}
+aside{
+    display: flex;
+    justify-content: center; /* centralização horizontal*/
+    align-items: center; /* centralização vertical */
+    border: 1px solid brown;
+    background-color: chocolate;
+    min-height: 50px; /* altura minima*/
+    width: 25%;
+    margin: 5px;
+}
+
+article{
+    display: flex;
+    justify-content: center; /* centralização horizontal*/
+    align-items: center; /* centralização vertical */
+    border: 1px solid sienna;
+    background-color: linen;
+    margin: 5px;
+    min-height: 100px ;
+    width: 100%;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center; /* centralização horizontal*/
+    align-items: center; /* centralização vertical */
+    border: 1px solid deeppink;
+    background-color: lightpink;
+    min-height: 50px; /* altura minima*/
+}
+
+
+@media screen and (max-width: 600px) {
+
+    main {
+    flex-direction: column;
+    }
+    section, aside {
+        width: 100%;
+    }
+
+}
+
